@@ -1,0 +1,5 @@
+# NexiaProLanka — Search Engine Crawler Directives
+User-agent: *
+Allow: /
+
+Sitemap: https://nexiaprolanka.com/sitemap.xml

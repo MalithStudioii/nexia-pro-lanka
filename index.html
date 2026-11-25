@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexiaProLanka — Sri Lankan Digital Product &amp; SaaS Studio</title>
+  <meta name="description" content="NexiaProLanka is a Sri Lankan digital product and SaaS studio engineering next-gen web platforms, community ecosystems, and smart utility software." />
+  <meta name="keywords" content="NexiaProLanka, Sri Lanka SaaS Studio, Digital Product Studio, Ape Pin Potha, Nexia Repair Hub, Software Engineering Sri Lanka, Diyatalawa" />
+  <meta name="author" content="Malith Dushantha Haputhanthri — NexiaProLanka" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#060913" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nexiaprolanka.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexiaprolanka.com/" />
+  <meta property="og:site_name" content="NexiaProLanka" />
+  <meta property="og:title" content="NexiaProLanka — Engineering Next-Gen Digital Platforms &amp; Smart Web Ecosystems" />
+  <meta property="og:description" content="NexiaProLanka designs, builds, and scales high-performance SaaS applications, community platforms, and utility software tailored for Sri Lanka and beyond." />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://nexiaprolanka.com/" />
+  <meta name="twitter:title" content="NexiaProLanka — Sri Lankan Digital Product &amp; SaaS Studio" />
+  <meta name="twitter:description" content="High-performance SaaS applications, community platforms, and smart utility software engineered in Sri Lanka." />
+
+  <!-- Favicon (Inline Geometric SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060913'/%3E%3Cpath d='M16 46V18l16 18 16-18v28' fill='none' stroke='%2306B6D4' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='46' r='3.5' fill='%23F59E0B'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: {
+              950: '#060913',
+              900: '#0B1120',
+              850: '#0F172A',
+              800: '#162033'
+            },
+            cyanx: {
+              400: '#22D3EE',
+              500: '#06B6D4',
+              600: '#0891B2'
+            },
+            amberx: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706'
+            }
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            sans: ['"Inter"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NexiaProLanka",
+    "url": "https://nexiaprolanka.com/",
+    "email": "supportnexiapro@gmail.com",
+    "description": "Sri Lankan Digital Product & SaaS Studio engineering next-gen digital platforms, community networks, and smart web utilities.",
+    "founder": {
+      "@type": "Person",
+      "name": "Malith Dushantha Haputhanthri",
+      "jobTitle": "Founder & Lead Developer"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Diyatalawa",
+      "addressRegion": "Uva Province",
+      "addressCountry": "LK"
+    },
+    "sameAs": [
+      "https://apepinpotha.lk"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-obsidian-950 text-slate-200 font-sans antialiased selection:bg-cyanx-500/30 selection:text-cyanx-400 overflow-x-hidden">
+
+  <!-- Ambient Background Glow Meshes -->
+  <div class="fixed inset-0 pointer-events-none -z-10 overflow-hidden" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-cyan"></div>
+    <div class="ambient-orb ambient-orb-amber"></div>
+    <div class="tech-grid-overlay"></div>
+  </div>
+
+  <!-- Sticky Glassmorphic Navigation -->
+  <header id="navbar" class="sticky top-0 z-40 w-full transition-all duration-300 border-b border-white/[0.06] bg-obsidian-950/75 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#top" class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-cyanx-500 rounded-lg pr-2">
+          <div class="relative flex items-center justify-center w-10 h-10 rounded-xl bg-obsidian-900 border border-white/10 group-hover:border-cyanx-500/50 transition-colors shadow-lg shadow-cyanx-500/10">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M6 24V8L16 19L26 8V24" stroke="#06B6D4" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6 8L16 3L26 8" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="16" cy="25" r="2.25" fill="#F59E0B" />
+            </svg>
+          </div>
+          <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white">
+            Nexia<span class="text-cyanx-400">Pro</span>Lanka
+          </span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300" aria-label="Primary Navigation">
+          <a href="#products" class="hover:text-white transition-colors">Products</a>
+          <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#legal" class="hover:text-white transition-colors">Legal</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold text-obsidian-950 bg-gradient-to-r from-cyanx-400 to-cyanx-500 hover:from-cyanx-300 hover:to-cyanx-400 shadow-[0_0_24px_rgba(6,182,212,0.35)] hover:shadow-[0_0_32px_rgba(6,182,212,0.55)] transition-all duration-300">
+            Get in Touch
+          </a>
+          <button
+            id="mobile-menu-btn"
+            type="button"
+            class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-xl bg-white/[0.04] border border-white/[0.08] text-slate-200 hover:text-white hover:bg-white/[0.08] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-cyanx-500"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation menu"
+          >
+            <svg id="menu-icon-open" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-white/[0.06] bg-obsidian-950/95 backdrop-blur-xl">
+      <nav class="px-4 py-4 space-y-1.5 text-sm font-medium" aria-label="Mobile Navigation">
+        <a href="#products" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-colors">Products</a>
+        <a href="#solutions" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-colors">Solutions</a>
+        <a href="#about" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-colors">About</a>
+        <a href="#legal" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-colors">Legal</a>
+        <a href="#contact" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-colors">Contact</a>
+        <div class="pt-2">
+          <a href="#contact" class="mobile-nav-link flex items-center justify-center w-full px-4 py-2.5 rounded-xl font-semibold text-obsidian-950 bg-gradient-to-r from-cyanx-400 to-cyanx-500">
+            Get in Touch
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-20 sm:pt-24 sm:pb-28 lg:pt-28 lg:pb-32 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+          <!-- Pill Badge -->
+          <div class="reveal inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-xs sm:text-sm font-medium text-slate-200 mb-7 shadow-inner">
+            <span>🇱🇰</span>
+            <span>Sri Lankan Digital Product &amp; SaaS Studio</span>
+          </div>
+
+          <!-- Headline -->
+          <h1 class="reveal font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.12] mb-6">
+            Engineering Next-Gen Digital Platforms &amp;
+            <span class="bg-gradient-to-r from-cyanx-400 via-cyanx-500 to-amberx-400 bg-clip-text text-transparent">
+              Smart Web Ecosystems.
+            </span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="reveal text-base sm:text-lg lg:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto mb-10">
+            NexiaProLanka designs, builds, and scales high-performance SaaS applications, community platforms, and utility software tailored for Sri Lanka and beyond.
+          </p>
+
+          <!-- Dual CTAs -->
+          <div class="reveal flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-obsidian-950 bg-gradient-to-r from-cyanx-400 to-cyanx-500 hover:from-cyanx-300 hover:to-cyanx-400 shadow-[0_0_28px_rgba(6,182,212,0.35)] hover:shadow-[0_0_38px_rgba(6,182,212,0.55)] transition-all duration-300">
+              Explore Our Ecosystem
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm sm:text-base font-semibold text-white bg-white/[0.04] border border-white/[0.1] hover:bg-white/[0.08] hover:border-amberx-500/40 transition-all duration-300">
+              Partner With Us
+              <svg class="w-4 h-4 text-amberx-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Stats Strip -->
+          <div class="reveal grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div class="glass-card rounded-2xl px-6 py-4 flex items-center justify-center sm:justify-start gap-3.5">
+              <span class="flex h-2.5 w-2.5 rounded-full bg-cyanx-400 shadow-[0_0_10px_#22D3EE]"></span>
+              <div class="text-left">
+                <p class="font-display font-bold text-white text-base">4+ Live Platforms</p>
+                <p class="text-xs text-slate-400">Active Production Suite</p>
+              </div>
+            </div>
+            <div class="glass-card rounded-2xl px-6 py-4 flex items-center justify-center sm:justify-start gap-3.5">
+              <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_10px_#34D399]"></span>
+              <div class="text-left">
+                <p class="font-display font-bold text-white text-base">99.9% Serverless Uptime</p>
+                <p class="text-xs text-slate-400">Resilient Edge Delivery</p>
+              </div>
+            </div>
+            <div class="glass-card rounded-2xl px-6 py-4 flex items-center justify-center sm:justify-start gap-3.5">
+              <span class="flex h-2.5 w-2.5 rounded-full bg-amberx-400 shadow-[0_0_10px_#FBBF24]"></span>
+              <div class="text-left">
+                <p class="font-display font-bold text-white text-base">Cloud-First Architecture</p>
+                <p class="text-xs text-slate-400">Security &amp; Speed Built-In</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flagship Ecosystem / Products Grid -->
+    <section id="products" class="py-20 sm:py-28 border-t border-white/[0.06]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal max-w-2xl mb-14">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyanx-400 mb-3">Flagship Ecosystem</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+            Purpose-Built Software Products
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+            From nationwide community networks to high-velocity SaaS and commerce utilities, every NexiaProLanka product is engineered for real-world reliability.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <!-- Product 1: Ape Pin Potha -->
+          <article class="reveal glass-card glass-card-hover rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  LIVE • NON-PROFIT COMMUNITY
+                </span>
+                <span class="text-xs font-mono text-slate-400">apepinpotha.lk</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">
+                Ape Pin Potha
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                Sri Lanka's first digital merit &amp; Dhamma community network connecting devotees, temples, and traditional artisans through a verified, respectful, and accessible platform.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-white/[0.06] flex items-center justify-between gap-4">
+              <span class="text-xs text-slate-400">Community &amp; Heritage Network</span>
+              <a
+                href="https://apepinpotha.lk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-obsidian-950 bg-cyanx-400 hover:bg-cyanx-300 transition-colors"
+              >
+                Visit Platform
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 2: Nexia Repair Hub -->
+          <article class="reveal glass-card glass-card-hover rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-cyanx-500/10 text-cyanx-400 border border-cyanx-500/25">
+                  SAAS PLATFORM
+                </span>
+                <span class="text-xs font-mono text-slate-400">Cloud Suite</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">
+                Nexia Repair Hub
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                All-in-one cloud management suite for mobile repair technicians featuring POS invoicing, QR device diagnostics, parts inventory, and technician utilities.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-white/[0.06] flex items-center justify-between gap-4">
+              <span class="text-xs text-slate-400">POS • QR Diagnostics • Inventory</span>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyanx-400 hover:text-cyanx-300 transition-colors">
+                Request Access
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 3: Nexia Order & Courier Pro -->
+          <article class="reveal glass-card glass-card-hover rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-amberx-500/10 text-amberx-400 border border-amberx-500/25">
+                  E-COMMERCE UTILITY
+                </span>
+                <span class="text-xs font-mono text-slate-400">Social Commerce</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">
+                Nexia Order &amp; Courier Pro
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                Automated WhatsApp order parser and instant courier slip generator built for Sri Lankan online sellers and social commerce teams to eliminate manual dispatch errors.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-white/[0.06] flex items-center justify-between gap-4">
+              <span class="text-xs text-slate-400">WhatsApp Parser • Dispatch Slips</span>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-semibold text-amberx-400 hover:text-amberx-300 transition-colors">
+                Learn More
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Product 4: Nexia Smart Utilities Suite -->
+          <article class="reveal glass-card glass-card-hover rounded-2xl p-7 sm:p-8 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase bg-violet-500/10 text-violet-300 border border-violet-500/25">
+                  WEB TOOLS
+                </span>
+                <span class="text-xs font-mono text-slate-400">Browser Engine</span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-white mb-3">
+                Nexia Smart Utilities Suite
+              </h3>
+              <p class="text-slate-400 leading-relaxed mb-6">
+                High-speed browser utilities including automotive VIN/mileage tools, Sri Lankan land unit converters (perches, roods, acres), and Unicode typography engines.
+              </p>
+            </div>
+            <div class="pt-5 border-t border-white/[0.06] flex items-center justify-between gap-4">
+              <span class="text-xs text-slate-400">Zero-Latency Client Processing</span>
+              <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-semibold text-cyanx-400 hover:text-cyanx-300 transition-colors">
+                Explore Tools
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities & Tech Stack -->
+    <section id="solutions" class="py-20 sm:py-28 border-t border-white/[0.06] bg-obsidian-900/35">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center max-w-2xl mx-auto mb-14">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amberx-400 mb-3">Capabilities &amp; Architecture</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+            Built for Scale, Security &amp; Speed
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+            Modern cloud infrastructure, serverless scalability, and security-first engineering across every digital product we ship.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          <!-- Capability 1 -->
+          <div class="reveal glass-card glass-card-hover rounded-2xl p-7">
+            <div class="w-12 h-12 rounded-xl bg-cyanx-500/10 border border-cyanx-500/25 flex items-center justify-center text-cyanx-400 mb-6">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Custom SaaS &amp; Web Apps</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Multi-tenant SaaS architectures, responsive progressive web apps, and streamlined operational dashboards engineered for sub-second interactions and zero bloat.
+            </p>
+          </div>
+
+          <!-- Capability 2 -->
+          <div class="reveal glass-card glass-card-hover rounded-2xl p-7">
+            <div class="w-12 h-12 rounded-xl bg-amberx-500/10 border border-amberx-500/25 flex items-center justify-center text-amberx-400 mb-6">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Community &amp; Marketplace Platforms</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              High-trust social networks, verified directory ecosystems, and local commerce workflows designed for Sri Lankan cultural and commercial realities.
+            </p>
+          </div>
+
+          <!-- Capability 3 -->
+          <div class="reveal glass-card glass-card-hover rounded-2xl p-7">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400 mb-6">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              </svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white mb-3">Cloud &amp; API Integrations</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Serverless edge functions, secure payment gateway integrations (PayHere-ready), automated messaging parsers, and hardened REST/webhook pipelines.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Founder Credibility -->
+    <section id="about" class="py-20 sm:py-28 border-t border-white/[0.06]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          <div class="reveal lg:col-span-7">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyanx-400 mb-3">About NexiaProLanka</p>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight mb-6">
+              Building Reliable, Transparent Software from Sri Lanka.
+            </h2>
+            <div class="space-y-4 text-slate-400 text-base sm:text-lg leading-relaxed">
+              <p>
+                NexiaProLanka is an independent digital product and SaaS studio committed to crafting accessible, high-integrity software solutions. We bridge global cloud engineering standards with practical tools built for local businesses, technicians, online sellers, and communities.
+              </p>
+              <p>
+                Every platform in our ecosystem prioritizes transparent pricing, data privacy, and clean user experiences — eliminating unnecessary complexity while maximizing everyday productivity.
+              </p>
+            </div>
+          </div>
+
+          <!-- Founder Card -->
+          <div class="reveal lg:col-span-5">
+            <div class="glass-card rounded-2xl p-7 sm:p-8 relative overflow-hidden">
+              <div class="absolute top-0 right-0 w-32 h-32 bg-cyanx-500/10 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none" aria-hidden="true"></div>
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyanx-500/20 to-amberx-500/20 border border-white/15 flex items-center justify-center font-display font-bold text-xl text-white">
+                  MD
+                </div>
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-amberx-400">Founder &amp; Lead Developer</p>
+                  <h3 class="font-display font-bold text-xl text-white">Malith Dushantha Haputhanthri</h3>
+                </div>
+              </div>
+              <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                Leading product architecture, full-stack cloud development, and ecosystem strategy at NexiaProLanka — engineering dependable software products from the hill country of Sri Lanka.
+              </p>
+              <div class="pt-5 border-t border-white/[0.08] flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+                <span class="inline-flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-cyanx-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Diyatalawa, Sri Lanka
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Verified Studio
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Legal & Compliance Transparency Section (PayHere-Ready) -->
+    <section id="legal" class="py-20 sm:py-24 border-t border-white/[0.06] bg-obsidian-900/35">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div class="max-w-2xl">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyanx-400 mb-3">Governance &amp; Compliance</p>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight mb-3">
+              Transparent Legal Policies
+            </h2>
+            <p class="text-slate-400 text-base leading-relaxed">
+              Clear, accessible merchant policies governing data protection, SaaS licensing, and subscription cancellations across all NexiaProLanka platforms.
+            </p>
+          </div>
+          <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/[0.04] border border-white/[0.08] text-slate-300 self-start md:self-auto">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+            PayHere Merchant Compliant
+          </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <button type="button" data-legal-modal="privacy" class="reveal legal-trigger-card glass-card glass-card-hover rounded-2xl p-6 text-left group">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-cyanx-400">Policy 01</span>
+              <span class="text-slate-400 group-hover:text-white transition-colors" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Privacy Policy</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              How NexiaProLanka collects, encrypts, and safeguards personal and payment data across our applications.
+            </p>
+          </button>
+
+          <button type="button" data-legal-modal="terms" class="reveal legal-trigger-card glass-card glass-card-hover rounded-2xl p-6 text-left group">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-cyanx-400">Policy 02</span>
+              <span class="text-slate-400 group-hover:text-white transition-colors" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Terms of Service</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              SaaS usage guidelines, software licensing terms, user responsibilities, and service level expectations.
+            </p>
+          </button>
+
+          <button type="button" data-legal-modal="refund" class="reveal legal-trigger-card glass-card glass-card-hover rounded-2xl p-6 text-left group">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-wider text-amberx-400">Policy 03</span>
+              <span class="text-slate-400 group-hover:text-white transition-colors" aria-hidden="true">↗</span>
+            </div>
+            <h3 class="font-display font-bold text-lg text-white mb-2">Refund &amp; Cancellation Policy</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Clear eligibility rules, subscription cancellation steps, and refund processing timelines for digital plans.
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 sm:py-28 border-t border-white/[0.06]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
+          <!-- Contact Details -->
+          <div class="reveal lg:col-span-5 space-y-6">
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyanx-400 mb-3">Get in Touch</p>
+              <h2 class="font-display font-bold text-3xl sm:text-4xl text-white tracking-tight mb-4">
+                Start a Conversation
+              </h2>
+              <p class="text-slate-400 text-base leading-relaxed">
+                Have a SaaS partnership inquiry, custom software requirement, or product support question? Reach our team directly.
+              </p>
+            </div>
+
+            <!-- Direct Email Card -->
+            <div class="glass-card rounded-2xl p-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Direct Email</p>
+              <div class="flex flex-wrap items-center justify-between gap-3">
+                <a href="mailto:supportnexiapro@gmail.com" class="font-display font-semibold text-base sm:text-lg text-white hover:text-cyanx-400 transition-colors break-all">
+                  supportnexiapro@gmail.com
+                </a>
+                <button
+                  id="copy-email-btn"
+                  type="button"
+                  data-email="supportnexiapro@gmail.com"
+                  class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white/[0.06] border border-white/[0.1] text-slate-200 hover:bg-white/[0.12] hover:text-white transition-colors"
+                >
+                  <svg class="w-3.5 h-3.5 text-cyanx-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <span id="copy-email-label">Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Studio Location Card -->
+            <div class="glass-card rounded-2xl p-6">
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Studio Location</p>
+              <p class="font-display font-semibold text-base text-white">Diyatalawa, Uva Province, Sri Lanka</p>
+              <p class="text-xs text-slate-400 mt-1">Operating globally • GMT+5:30 (IST / SLST)</p>
+            </div>
+          </div>
+
+          <!-- Inquiry Form -->
+          <div class="reveal lg:col-span-7">
+            <form id="contact-form" novalidate class="glass-card rounded-2xl p-6 sm:p-8 space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="contact-name" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Full Name</label>
+                  <input
+                    id="contact-name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="e.g. Kasun Perera"
+                    class="w-full px-4 py-3 rounded-xl bg-obsidian-950/80 border border-white/[0.1] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyanx-500 focus:ring-1 focus:ring-cyanx-500 transition-colors"
+                  />
+                </div>
+                <div>
+                  <label for="contact-email" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email Address</label>
+                  <input
+                    id="contact-email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="you@company.com"
+                    class="w-full px-4 py-3 rounded-xl bg-obsidian-950/80 border border-white/[0.1] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyanx-500 focus:ring-1 focus:ring-cyanx-500 transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-subject" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Subject</label>
+                <select
+                  id="contact-subject"
+                  name="subject"
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian-950/80 border border-white/[0.1] text-sm text-white focus:outline-none focus:border-cyanx-500 focus:ring-1 focus:ring-cyanx-500 transition-colors"
+                >
+                  <option value="Partnership / Custom SaaS Inquiry">Partnership / Custom SaaS Inquiry</option>
+                  <option value="Nexia Repair Hub Access">Nexia Repair Hub Access</option>
+                  <option value="Nexia Order &amp; Courier Pro">Nexia Order &amp; Courier Pro</option>
+                  <option value="Billing, Refund &amp; Legal Support">Billing, Refund &amp; Legal Support</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contact-message" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Tell us about your project, timeline, or support request..."
+                  class="w-full px-4 py-3 rounded-xl bg-obsidian-950/80 border border-white/[0.1] text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyanx-500 focus:ring-1 focus:ring-cyanx-500 transition-colors resize-y"
+                ></textarea>
+              </div>
+
+              <!-- Form Status Feedback -->
+              <div id="form-feedback" class="hidden rounded-xl px-4 py-3 text-sm" role="status" aria-live="polite"></div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-1">
+                <button
+                  type="submit"
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl text-sm font-semibold text-obsidian-950 bg-gradient-to-r from-cyanx-400 to-cyanx-500 hover:from-cyanx-300 hover:to-cyanx-400 shadow-[0_0_24px_rgba(6,182,212,0.3)] transition-all duration-300"
+                >
+                  Send Inquiry
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+                <a
+                  id="mailto-fallback"
+                  href="mailto:supportnexiapro@gmail.com?subject=Inquiry%20via%20NexiaProLanka"
+                  class="text-xs text-slate-400 hover:text-cyanx-400 transition-colors text-center sm:text-right"
+                >
+                  Prefer your email client? Open mail app ↗
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Executive Footer -->
+  <footer class="border-t border-white/[0.08] bg-obsidian-950/90 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-white/[0.06]">
+        <div>
+          <a href="#top" class="inline-flex items-center gap-2.5 mb-2">
+            <span class="font-display font-bold text-lg text-white">
+              Nexia<span class="text-cyanx-400">Pro</span>Lanka
+            </span>
+          </a>
+          <p class="text-xs text-slate-400">
+            Sri Lankan Digital Product &amp; SaaS Studio • Diyatalawa, Uva Province
+          </p>
+        </div>
+
+        <nav class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-slate-400" aria-label="Footer Quick Links">
+          <a href="#products" class="hover:text-white transition-colors">Products</a>
+          <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>&copy; 2026 NexiaProLanka. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-5">
+          <button type="button" data-legal-modal="privacy" class="hover:text-cyanx-400 transition-colors">Privacy Policy</button>
+          <button type="button" data-legal-modal="terms" class="hover:text-cyanx-400 transition-colors">Terms of Service</button>
+          <button type="button" data-legal-modal="refund" class="hover:text-amberx-400 transition-colors">Refund Policy</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PayHere-Ready Legal & Compliance Modal -->
+  <div
+    id="legal-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-6"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="legal-modal-title"
+  >
+    <!-- Backdrop -->
+    <div id="legal-modal-backdrop" class="fixed inset-0 bg-obsidian-950/85 backdrop-blur-md transition-opacity"></div>
+
+    <!-- Modal Panel -->
+    <div class="relative z-10 w-full max-w-3xl max-h-[86vh] flex flex-col rounded-2xl bg-obsidian-900 border border-white/[0.12] shadow-2xl overflow-hidden">
+      <!-- Modal Header -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-white/[0.08] bg-obsidian-950/60">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-widest text-cyanx-400">NexiaProLanka Legal &amp; Compliance</p>
+          <h2 id="legal-modal-title" class="font-display font-bold text-xl text-white">Policy</h2>
+        </div>
+        <button
+          id="legal-modal-close"
+          type="button"
+          class="w-9 h-9 rounded-xl bg-white/[0.05] border border-white/[0.08] text-slate-300 hover:text-white hover:bg-white/[0.1] flex items-center justify-center transition-colors"
+          aria-label="Close legal policy modal"
+        >
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Policy Switcher Tabs -->
+      <div class="flex items-center gap-2 px-6 py-3 border-b border-white/[0.06] bg-obsidian-950/40 overflow-x-auto">
+        <button type="button" data-legal-tab="privacy" class="legal-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap">Privacy Policy</button>
+        <button type="button" data-legal-tab="terms" class="legal-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap">Terms of Service</button>
+        <button type="button" data-legal-tab="refund" class="legal-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition-colors whitespace-nowrap">Refund &amp; Cancellation Policy</button>
+      </div>
+
+      <!-- Modal Scrollable Body -->
+      <div id="legal-modal-body" class="p-6 sm:p-8 overflow-y-auto text-sm text-slate-300 leading-relaxed space-y-5">
+        <!-- Populated dynamically by js/main.js -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 border-t border-white/[0.08] bg-obsidian-950/60 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+        <span>Effective Date: January 1, 2026 • Contact: supportnexiapro@gmail.com</span>
+        <button
+          id="legal-modal-done"
+          type="button"
+          class="px-4 py-2 rounded-lg font-semibold text-obsidian-950 bg-cyanx-400 hover:bg-cyanx-300 transition-colors"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modular Vanilla JavaScript -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
