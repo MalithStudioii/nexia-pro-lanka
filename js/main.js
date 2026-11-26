@@ -395,4 +395,58 @@
       }
     });
   }
+
+  /* --------------------------------------------------------------------------
+     6. Service Quote & Product Demo Subject Pre-Selection
+     -------------------------------------------------------------------------- */
+  const quoteTriggers = document.querySelectorAll('[data-quote-subject]');
+  const contactSubjectSelect = document.getElementById('contact-subject');
+  const contactNameInput = document.getElementById('contact-name');
+
+  quoteTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const targetSubject = trigger.getAttribute('data-quote-subject');
+      if (contactSubjectSelect && targetSubject) {
+        const hasOption = Array.from(contactSubjectSelect.options).some(
+          (opt) => opt.value === targetSubject
+        );
+        if (hasOption) {
+          contactSubjectSelect.value = targetSubject;
+        }
+      }
+      if (contactNameInput) {
+        setTimeout(() => contactNameInput.focus({ preventScroll: true }), 450);
+      }
+    });
+  });
+
+  /* --------------------------------------------------------------------------
+     7. Interactive FAQ Accordion
+     -------------------------------------------------------------------------- */
+  const faqTriggers = document.querySelectorAll('.faq-trigger');
+
+  faqTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+      const panelId = trigger.getAttribute('aria-controls');
+      const panel = panelId ? document.getElementById(panelId) : null;
+      const icon = trigger.querySelector('.faq-icon');
+
+      // Close other open items for a clean single-open accordion experience
+      faqTriggers.forEach((otherTrigger) => {
+        if (otherTrigger !== trigger) {
+          otherTrigger.setAttribute('aria-expanded', 'false');
+          const otherPanelId = otherTrigger.getAttribute('aria-controls');
+          const otherPanel = otherPanelId ? document.getElementById(otherPanelId) : null;
+          const otherIcon = otherTrigger.querySelector('.faq-icon');
+          if (otherPanel) otherPanel.classList.add('hidden');
+          if (otherIcon) otherIcon.classList.remove('rotate-180');
+        }
+      });
+
+      trigger.setAttribute('aria-expanded', String(!isExpanded));
+      if (panel) panel.classList.toggle('hidden', isExpanded);
+      if (icon) icon.classList.toggle('rotate-180', !isExpanded);
+    });
+  });
 })();
