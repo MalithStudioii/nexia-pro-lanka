@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nexiaprolanka.com/sitemap.xml
+Sitemap: https://nexia-pro-lanka.vercel.app/sitemap.xml

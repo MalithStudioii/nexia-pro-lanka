@@ -275,10 +275,12 @@
   }
 
   /* --------------------------------------------------------------------------
-     5. Contact Form Client-Side Validation & Instant Confirmation
+     5. Contact Form Client-Side Validation & Web3Forms Submission
      -------------------------------------------------------------------------- */
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
+  const submitBtn = document.getElementById('contact-submit-btn');
+  const submitBtnDefaultHtml = submitBtn ? submitBtn.innerHTML : '';
 
   function showFeedback(message, isError) {
     if (!formFeedback) return;
@@ -301,8 +303,18 @@
     }
   }
 
+  function setSubmittingState(isSubmitting) {
+    if (!submitBtn) return;
+    submitBtn.disabled = isSubmitting;
+    if (isSubmitting) {
+      submitBtn.textContent = 'Sending Inquiry...';
+    } else {
+      submitBtn.innerHTML = submitBtnDefaultHtml;
+    }
+  }
+
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const name = document.getElementById('contact-name').value.trim();
@@ -336,14 +348,51 @@
         mailtoFallback.setAttribute('href', mailtoHref);
       }
 
-      showFeedback(
-        'Thank you! Your inquiry has been prepared. Opening your email client or you can email supportnexiapro@gmail.com directly.',
-        false
-      );
+      const accessKeyInput = contactForm.querySelector('input[name="access_key"]');
+      const accessKey = accessKeyInput ? accessKeyInput.value.trim() : '';
 
-      // Trigger mailto client gracefully while preserving instant on-page confirmation
-      window.location.href = mailtoHref;
-      contactForm.reset();
+      // Graceful mailto fallback if no Web3Forms access key is configured
+      if (!accessKey) {
+        showFeedback(
+          'Opening your email client to send your inquiry directly to supportnexiapro@gmail.com.',
+          false
+        );
+        window.location.href = mailtoHref;
+        contactForm.reset();
+        return;
+      }
+
+      setSubmittingState(true);
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json'
+          },
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          showFeedback(
+            'Thank you! Your inquiry has been sent to our team. We will respond to your email shortly.',
+            false
+          );
+          contactForm.reset();
+        } else {
+          throw new Error(result.message || 'Submission failed');
+        }
+      } catch {
+        showFeedback(
+          'Unable to submit automatically right now. Please click "Open mail app ↗" below or email supportnexiapro@gmail.com directly — your message details are prefilled.',
+          true
+        );
+      } finally {
+        setSubmittingState(false);
+      }
     });
   }
 })();
