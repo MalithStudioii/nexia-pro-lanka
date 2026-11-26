@@ -181,7 +181,9 @@
 
     'modal.eyebrow': 'NexiaProLanka නීතිමය සහ අනුකූලතා ප්‍රතිපත්ති',
     'modal.effective': 'බලාත්මක දිනය: 2026 ජනවාරි 1 • විමසීම්: supportnexiapro@gmail.com',
-    'modal.close': 'වසන්න'
+    'modal.close': 'වසන්න',
+
+    'offer.claim': 'විශේෂ දීමනාව • දැන්ම ලබාගන්න'
   };
 
   const UI_MESSAGES = {
@@ -867,4 +869,38 @@
   }
 
   checkLegalHash();
+
+  /* --------------------------------------------------------------------------
+     11. Floating Promotional Offer Widget
+     -------------------------------------------------------------------------- */
+  const offerWidget = document.getElementById('offer-widget');
+  const offerDismissBtn = document.getElementById('offer-dismiss-btn');
+  const OFFER_DISMISSED_KEY = 'nexia_offer_dismissed';
+
+  if (offerWidget) {
+    let isDismissed = false;
+    try {
+      isDismissed = sessionStorage.getItem(OFFER_DISMISSED_KEY) === 'true';
+    } catch {
+      isDismissed = false;
+    }
+
+    if (isDismissed) {
+      offerWidget.classList.add('hidden');
+    }
+
+    if (offerDismissBtn) {
+      offerDismissBtn.addEventListener('click', () => {
+        offerWidget.classList.add('opacity-0', 'scale-95', 'pointer-events-none');
+        setTimeout(() => {
+          offerWidget.classList.add('hidden');
+        }, 250);
+        try {
+          sessionStorage.setItem(OFFER_DISMISSED_KEY, 'true');
+        } catch {
+          // Ignore storage errors in restricted browsing contexts
+        }
+      });
+    }
+  }
 })();
